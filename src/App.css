@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-dark: #0f1728;
+  --white: #fff;
+  --border-grey: #ffffff9c;
+  --grey: #94a3b8;
+  
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  /* background: linear-gradient(
+    135deg,
+    rgba(224, 242, 254, 0.8) 0%,
+    rgba(125, 211, 252, 0.5) 100%
+  );
+  backdrop-filter: blur(10px); */
+}
+
+.white-bg {
+  background: #FEFEFF;
+}
+
+.dark-gradient {
+  background: radial-gradient(circle at 30% 40%, #3b4452 0%, #1b2330 100%);
+}
+
+.hl {
+  border-top: 1px solid var(--grey);
+  color: var(--grey);
+}
+
+.grey-text {
+  color: var(--grey);
+}
+
+.grey-bg {
+  background: var(--grey);
+}
+
+.grey-border {
+  border: 1px solid var(--grey);
+}
+
+.black-border {
+  border: 1px solid var(--bg-dark);
+}
+
+.grey-border-top {
+  border-top: 1px solid #3b4452;
+}
+
+.grey-border-right {
+  border-right: 1px solid #3b4452;
+}
+
+.grey-border-bottom {
+  border-bottom: 2px solid #3b4452;
+}
+
+.dark-bg {
+  background: var(--bg-dark);
+}
+
+.light-bg {
+  background: #c1c5ca4d;
+}
+
+.scroll-bar {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #4b5563 transparent;
+}
+
+.scroll-bar::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+  border-radius: 20px;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb:hover {
+  background-color: #64748b;
+}
+
+.sun-arc-wrap {
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.sun-arc-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.sun-arc-track {
+  stroke: rgba(255, 255, 255, 0.2);
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.sun-arc-progress {
+  stroke: #facc15;
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.sun-dot {
+  fill: #fde047;
+  filter: drop-shadow(0 0 5px rgba(253, 224, 71, 0.9));
+}
+
+.border-effect {
+  transition: all 0.3s ease;
+}
+
+.border-effect:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 0 0 1px rgba(56, 189, 248, 0.15),
+    0 0 5px rgba(56, 189, 248, 0.35),
+    0 0 10px rgba(56, 189, 248, 0.2);
+}
+
+.card {
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 0 0 1px rgba(56, 189, 248, 0.15),
+    0 0 6px rgba(56, 189, 248, 0.35),
+    0 0 12px rgba(56, 189, 248, 0.2);
+}
