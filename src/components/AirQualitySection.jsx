@@ -88,7 +88,7 @@ const AirQualitySection = () => {
     <div className={`h-full card rounded-2xl py-2 px-3 ${
           theme === "dark" ? "dark-gradient" : "white-bg"
         }`}>
-      <p className="text-sm grey-text font-medium mb-1 lg:mb-0.5">
+      <p className="text-sm font-medium mb-1 lg:mb-0.5">
         Air Quality
       </p>
       <div className="grey-border-bottom pb-1 lg:pb-0.5">
@@ -142,7 +142,7 @@ const AirQualitySection = () => {
           </svg>
         </div>
       </div>
-      <div className="text-[#facc15] text-sm my-1.5 lg:my-1 flex justify-between">
+      <div className="text-[#facc15] text-xs lg:text-sm my-1.5 lg:my-1 flex justify-between">
         <span>Rise {data?.forecast.forecastday[0].astro.sunrise}</span>
         <span>Set {data?.forecast.forecastday[0].astro.sunset}</span>
       </div>

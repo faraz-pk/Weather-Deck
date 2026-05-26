@@ -93,7 +93,7 @@ const MainContent = () => {
         <SearchBar />
         <ThemeToggleButton />
       </div>
-      <div className="grid grid-cols-6 gap-3 mt-3.75">
+      <div className="grid grid-cols-6 gap-3 mt-3.5">
         <WeatherInfoItem
           color="#4a98d3"
           title="Wind Speed"
