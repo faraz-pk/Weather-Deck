@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import SearchBar from "./components/SearchBar";
+import ThemeToggleButton from "./components/ThemeToggleButton";
 import "./App.css";
 import Sidebar from "./components/Sidebar";
 import MainContent from "./components/MainContent";
@@ -15,13 +17,11 @@ function App() {
     dispatch(getWeather("Islamabad"));
   }, [dispatch]);
 
- useEffect(() => {
-  document.body.style.backgroundColor =
-    theme === "dark" ? "#0f1728" : "#c1c5ca4d";
-  document.body.style.color =
-    theme === "dark" ? "#fff" : "#000";
-}, [theme]);
-
+  useEffect(() => {
+    document.body.style.backgroundColor =
+      theme === "dark" ? "#0f1728" : "#c1c5ca4d";
+    document.body.style.color = theme === "dark" ? "#fff" : "#000";
+  }, [theme]);
 
   if (status === "loading") {
     return (
@@ -34,7 +34,7 @@ function App() {
   if (status === "failed") {
     return (
       <div className="flex flex-col justify-center items-center h-screen gap-4 p-4">
-        <div className="text-lg font-semibold">Failed to load weather</div>
+        <div className="text-lg font-semibold">Failed to load weather or city not found</div>
         <div className="text-sm grey-text">{error || "Unknown error"}</div>
         <button
           className="mt-2 px-4 py-2 rounded bg-blue-500 text-white"
@@ -55,9 +55,15 @@ function App() {
   }
 
   return (
-    <div className="w-full sm:flex sm:gap-3 p-2.75">
-      <Sidebar />
-      <MainContent />
+    <div className="w-full p-2.75">
+      <div className="flex justify-center items-center gap-5">
+        <SearchBar />
+        <ThemeToggleButton />
+      </div>
+      <div className="w-full sm:flex gap-3">
+        <Sidebar/>
+        <MainContent />
+      </div>
     </div>
   );
 }

@@ -20,7 +20,7 @@ const MainTemp = () => {
 
   return (
     <div
-      className={`card w-full rounded-xl p-4 lg:p-5 flex flex-col gap-2 md:gap-3 ${
+      className={`mb-2 xxs:mb-0 card w-full rounded-xl p-4 lg:p-5 flex flex-col gap-2 md:gap-3 ${
         theme === "dark" ? "dark-gradient" : "white-bg"
       }`}
     >

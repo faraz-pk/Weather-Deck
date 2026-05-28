@@ -102,10 +102,10 @@ const HourlyForecastBar = () => {
           </button>
         ) : null}
         <div
-          className="overflow-x-auto scroll-smooth scrollbar-hide w-full md:overflow-visible"
+          className="overflow-x-auto scroll-smooth w-full md:overflow-visible"
           ref={sliderRef}
         >
-          <div className="md:grid md:grid-cols-12 flex gap-1 min-w-max md:min-w-0">
+          <div className="md:grid md:grid-cols-12 flex gap-1">
             {next12Hours.map((hour) => (
               <HourlyForecastBox
                 key={hour.time}

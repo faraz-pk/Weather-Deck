@@ -46,7 +46,7 @@ const TempTrendGraph = () => {
       </p>
       <div className="h-25 w-full">
         <ResponsiveContainer width="100%" height="100%">
-          <AreaChart data={rawData}>
+          <AreaChart data={rawData} margin={{ top: 0, right: 0, left: -40, bottom: 0 }}>
             <defs>
               {/* This creates the blue fade effect */}
               <linearGradient id="colorTemp" x1="0" y1="0" x2="0" y2="1">

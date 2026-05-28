@@ -1,6 +1,4 @@
 import React from "react";
-import SearchBar from "./SearchBar";
-import ThemeToggleButton from "./ThemeToggleButton";
 import WeatherInfoItem from "./WeatherInfoItem";
 import HourlyForecastBar from "./HourlyForecastBar";
 import WeeklyForecastBar from "./WeeklyForecastBar";
@@ -88,12 +86,8 @@ const MainContent = () => {
   };
 
   return (
-    <div className="w-full sm:w-4/5">
-      <div className="flex justify-center items-center gap-5">
-        <SearchBar />
-        <ThemeToggleButton />
-      </div>
-      <div className="grid grid-cols-6 gap-3 mt-3.5">
+    <div className="mt-3.5 sm:w-4/5">
+      <div className="grid grid-cols-2 xxs:grid-cols-3 xs:grid-cols-4 sm:grid-cols-6 gap-3">
         <WeatherInfoItem
           color="#4a98d3"
           title="Wind Speed"
@@ -142,12 +136,12 @@ const MainContent = () => {
       <div>
         <HourlyForecastBar />
       </div>
-      <div className="flex">
-        <div className="w-[70%] mt-2.5">
+      <div className="xs:flex">
+        <div className="xs:w-[70%] mt-2.5">
           <WeeklyForecastBar />
           <TempTrendGraph />
         </div>
-        <div className="w-[30%] mt-2.5 ml-2">
+        <div className="xs:w-[30%] mt-2.5 ml-2">
           <AirQualitySection />
         </div>
       </div>

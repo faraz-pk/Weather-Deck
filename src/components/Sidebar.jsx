@@ -4,7 +4,7 @@ import SavedLocs from './SavedLocs'
 
 const Sidebar = () => {
   return (
-    <div className='w-full sm:w-1/5 flex sm:flex-col gap-2'>
+    <div className='sm:w-1/5 mt-3.5 xxs:flex sm:flex-col gap-2'>
         <MainTemp/>
         <SavedLocs/>
     </div>

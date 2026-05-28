@@ -21,7 +21,7 @@ const SavedLocs = () => {
       }`}
     >
       <div className="font-bold ml-1 text-md md:text-lg">Saved Locations</div>
-      <div className="scroll-bar pr-2 h-69">
+      <div className="scroll-bar pr-2 h-55">
         {savedCities.length > 0 ? (
           savedCities.map((city) => (
             <SavedCity
