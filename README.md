@@ -82,10 +82,10 @@ Create a `.env` file in the root directory and add the following:
 
 ```env
 VITE_WEATHER_API_KEY=your_api_key_here
-VITE_BASE_URL=https://api.weatherapi.com/v1
+VITE_CITY_API_KEY=your_api_key_here
 ```
 
-> Replace `your_api_key_here` with your WeatherAPI API key.
+> Replace `your_api_key_here` with your WeatherAPI API key and City API key.
 
 ---
 
@@ -97,19 +97,23 @@ This project uses the WeatherAPI service for fetching weather and forecast data.
 
 ```bash
 https://api.weatherapi.com/v1/forecast.json?key=YOUR_API_KEY&q=London&days=7
+https://api.api-ninjas.com/v1/city?name=city_name
 ```
 
 ### API Features Used
 
+* Auto City Suggestions in Searchbar using Debouncing
 * Current Weather
 * Forecast Weather
 * Hourly Forecast
 * Air Quality Index
 * Astronomy Data
 
-Get your API key from:
+Get your API keys from:
 
 https://www.weatherapi.com/
+and 
+https://api-ninjas.com/
 
 ---
 
