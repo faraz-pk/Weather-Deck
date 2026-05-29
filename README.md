@@ -40,10 +40,12 @@ The project focuses on modern frontend development practices using React, Redux 
 * JavaScript (ES6+)
 * React Icons
 * Recharts
+* Local Storage
 
 ### APIs
 
 * WeatherAPI.com API
+* api-ninjas.cam
 
 ### Build Tools
 
